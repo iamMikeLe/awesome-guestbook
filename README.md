@@ -12,7 +12,7 @@
 
 ## !!!IMPORTANT!!!
 
-- When reviewing my code challenge, I kindly request that you carefully check the descriptions accompanying my pull requests. These descriptions encapsulate my thought process and rationale behind the decisions made to address specific issues encountered during development. You can find them [here](https://github.com/iamMikeLe/awesome-guestbook/pulls?q=is%3Apr+is%3Aclosed)
+- When reviewing my code challenge, I kindly request that you carefully check the descriptions accompanying my pull requests. These descriptions encapsulate my thought process and rationale behind the decisions made to address specific issues encountered during development. You can find them [here](https://github.com/iamMikeLe/awesome-guestbook/pulls?q=is%3Apr+is%3Aclosed) (you can ignore my first pull request)
 
 ## Run Locally
 
