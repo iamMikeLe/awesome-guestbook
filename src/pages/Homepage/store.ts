@@ -12,6 +12,7 @@ export type Visitor = {
 
 interface State {
   visitors: Visitor[];
+  updateVisitors: (newVisitors: Visitor[]) => void;
   addVisitor: (newVisitor: Visitor) => void;
 }
 
@@ -19,6 +20,8 @@ const useVisitorsStore = create<State>()(
   persist(
     (set) => ({
       visitors: dummyData,
+      updateVisitors: (newVisitors: Visitor[]) =>
+        set({ visitors: newVisitors }),
       addVisitor: (newVisitor: Visitor) =>
         set((state) => ({ visitors: [...state.visitors, newVisitor] })),
     }),

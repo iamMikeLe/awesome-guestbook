@@ -1,12 +1,12 @@
 import VisitorTable from "@/pages/Homepage/layout/VisitorTable";
-import { dummyData } from "@/utils/dummyData";
-
-import Box from "@mui/material/Box";
-import Breadcrumbs from "@mui/material/Breadcrumbs";
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
-import TableContainer from "@mui/material/TableContainer";
-import Typography from "@mui/material/Typography";
+import {
+  Box,
+  Breadcrumbs,
+  Grid,
+  Paper,
+  TableContainer,
+  Typography,
+} from "@mui/material";
 
 export default function VisitorManagement() {
   return (
@@ -19,7 +19,7 @@ export default function VisitorManagement() {
             </Typography>
           </Breadcrumbs>
         </Box>
-        <VisitorTable rows={dummyData} />
+        <VisitorTable />
       </TableContainer>
     </Grid>
   );

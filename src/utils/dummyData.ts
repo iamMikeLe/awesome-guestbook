@@ -6,7 +6,7 @@ export const dummyData = [
     department: "marketing",
   },
   {
-    selected: true,
+    selected: false,
     visitor: "Jane",
     email: "Jane@mail.com",
     department: "accounting",
@@ -18,7 +18,7 @@ export const dummyData = [
     department: "management",
   },
   {
-    selected: true,
+    selected: false,
     visitor: "Lucas",
     email: "Lucas@mail.com",
     department: "sales",
