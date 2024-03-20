@@ -1,5 +1,6 @@
 import VisitorTable from "@/pages/Homepage/layout/VisitorTable";
-import { rows } from "@/pages/Homepage/layout/dummyData";
+import { dummyData } from "@/utils/dummyData";
+
 import Box from "@mui/material/Box";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Grid from "@mui/material/Grid";
@@ -18,7 +19,7 @@ export default function VisitorManagement() {
             </Typography>
           </Breadcrumbs>
         </Box>
-        <VisitorTable rows={rows} />
+        <VisitorTable rows={dummyData} />
       </TableContainer>
     </Grid>
   );
