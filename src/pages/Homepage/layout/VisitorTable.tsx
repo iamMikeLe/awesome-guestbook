@@ -63,7 +63,12 @@ export default function VisitorTable() {
           <TableRow>
             <TableCell>
               <Checkbox
-                inputProps={{ "aria-label": "checkbox" }}
+                inputProps={
+                  {
+                    "aria-label": "checkbox",
+                    "data-testid": "select-all-checkbox",
+                  } as React.InputHTMLAttributes<HTMLInputElement>
+                }
                 checked={sellectAllData}
                 onChange={onSelectAllDataChange}
                 disabled={visitors.length === 0}
@@ -84,7 +89,7 @@ export default function VisitorTable() {
           ))}
         </TableBody>
       </Table>
-      <Box component="section" sx={{ p: 3 }}>
+      <Box component="section" sx={{ p: 3 }} data-testid="table-footer">
         {visitors.length === 0 ? (
           <Typography
             variant="subtitle1"
