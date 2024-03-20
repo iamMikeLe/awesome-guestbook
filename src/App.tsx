@@ -1,7 +1,9 @@
+import StaticAppBar from "@/components/AppBar";
+
 export default function App() {
   return (
     <>
-      <p>Hello World!</p>
+      <StaticAppBar />
     </>
   );
 }
