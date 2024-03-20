@@ -6,9 +6,7 @@ export default function AddNewVisitor() {
     <Grid item xs={12} md={4}>
       <Card sx={{ minWidth: 275, padding: "16px" }}>
         <CardContent>
-          <Typography variant="h6" gutterBottom>
-            Add new visitor
-          </Typography>
+          <Typography variant="h6">Add new visitor</Typography>
           <Typography variant="subtitle1" gutterBottom>
             Fill name, email address and the department.
           </Typography>
