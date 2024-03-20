@@ -17,7 +17,13 @@ export default function TableRowComponent({
     <TableRow>
       <TableCell sx={{ display: "flex", alignItems: "center" }}>
         <Checkbox
-          inputProps={{ "aria-label": "checkbox" }}
+          data-testid={`visitor-row-${email}]`}
+          inputProps={
+            {
+              "aria-label": "checkbox",
+              "data-testid": `visitor-checkbox-${email}`,
+            } as React.InputHTMLAttributes<HTMLInputElement>
+          }
           checked={selected}
           onChange={(e) => onCheckboxChange(e, email)}
         />

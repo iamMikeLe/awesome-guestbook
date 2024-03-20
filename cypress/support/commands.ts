@@ -35,3 +35,27 @@
 //     }
 //   }
 // }
+// eslint-disable-next-line @typescript-eslint/no-namespace
+declare namespace Cypress {
+  interface Chainable<Subject> {
+    fillForm(email: string): Chainable<Subject>;
+  }
+}
+
+function getRandomName() {
+  const names = ["John Doe", "Jane Doe", "Alice", "Bob", "Charlie"];
+  return names[Math.floor(Math.random() * names.length)];
+}
+
+function getRandomDepartment() {
+  const names = ["marketing", "IT", "sales", "management", "accounting"];
+  return names[Math.floor(Math.random() * names.length)];
+}
+
+Cypress.Commands.add("fillForm", (email) => {
+  cy.get('input[name="visitor"]').type(getRandomName());
+  cy.get('input[name="email"]').type(email);
+  cy.get('input[name="isAgreementChecked"]').check();
+  cy.get("#department-select").click();
+  cy.get(`li[data-value=${getRandomDepartment()}]`).click();
+});
